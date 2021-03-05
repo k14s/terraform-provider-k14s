@@ -8,5 +8,7 @@ crash.log
 *.tfstate.lock.info
 *.tfstate.backup
 
+.terraform.lock.hcl
+
 /terraform-provider-k14s
 /tmp

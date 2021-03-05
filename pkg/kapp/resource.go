@@ -3,7 +3,7 @@ package kapp
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/k14s/terraform-provider-k14s/pkg/logger"
 	"github.com/k14s/terraform-provider-k14s/pkg/schemamisc"
 )

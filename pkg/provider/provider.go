@@ -1,8 +1,8 @@
 package provider
 
 import (
-	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 	"github.com/k14s/terraform-provider-k14s/pkg/kapp"
 	"github.com/k14s/terraform-provider-k14s/pkg/kbld"
 	"github.com/k14s/terraform-provider-k14s/pkg/logger"

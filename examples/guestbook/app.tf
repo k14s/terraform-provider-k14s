@@ -7,7 +7,7 @@ provider "k14s" {
 }
 
 data "k14s_ytt" "guestbook" {
-  files = ["."]
+  files                   = ["config"]
   ignore_unknown_comments = true
 
   # Configure all deployments to have 1 replica
@@ -21,8 +21,8 @@ data "k14s_ytt" "guestbook" {
 }
 
 resource "k14s_kapp" "guestbook" {
-  app = "guestbook"
-  namespace = "default"
-  config_yaml = data.k14s_ytt.guestbook.result
+  app          = "guestbook"
+  namespace    = "default"
+  config_yaml  = data.k14s_ytt.guestbook.result
   diff_changes = true
 }

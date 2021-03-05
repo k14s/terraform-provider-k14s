@@ -1,5 +1,5 @@
 data "k14s_ytt" "app2" {
-  files = ["ytt-k8s"]
+  files       = ["ytt-k8s"]
   config_yaml = <<EOF
     #@data/values
     ---
@@ -9,9 +9,9 @@ data "k14s_ytt" "app2" {
 }
 
 resource "k14s_kapp" "app2" {
-  app = "app2"
-  namespace = "default"
-  config_yaml = data.k14s_ytt.app2.result
+  app          = "app2"
+  namespace    = "default"
+  config_yaml  = data.k14s_ytt.app2.result
   diff_changes = true
-  debug_logs = true
+  debug_logs   = true
 }

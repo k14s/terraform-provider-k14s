@@ -7,5 +7,5 @@ data "k14s_kbld" "tpl1" {
 }
 
 output "kbld_result" {
-  value = "${data.k14s_kbld.tpl1.result}"
+  value = data.k14s_kbld.tpl1.result
 }

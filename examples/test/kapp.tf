@@ -1,5 +1,5 @@
 resource "k14s_kapp" "app1" {
-  app = "app1"
+  app       = "app1"
   namespace = "default"
 
   config_yaml = <<EOF
@@ -15,7 +15,7 @@ resource "k14s_kapp" "app1" {
 }
 
 resource "k14s_kapp" "app3" {
-  app = "app3"
+  app       = "app3"
   namespace = "default"
 
   config_yaml = <<EOF
